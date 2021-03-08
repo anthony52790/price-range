@@ -1,0 +1,138 @@
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container-input-price{
+  display:flex;
+  align-items: center;
+}
+.group-price{
+  position:relative;
+  border:1px solid rgba(0,0,0,0.4);
+  border-radius:5px;
+  width:100px;
+  display: inline-flex;
+  align-items: center;
+}
+.group-title-text{
+  font-size:10px;
+  background:#fff;
+  color: rgba(0,0,0,0.8);
+  position:absolute;
+  top:-5px;
+  left:8px;
+  padding:0px 5px;
+}
+.group-price.active{
+  border:1px solid rgba(0,0,0,0.7);
+}
+.group-price.sy .group-symbol{
+  color:#000;
+}
+.group-symbol{
+  color:#C5C5C5;
+  position:absolute;
+  top:9px;
+  left: 22px;
+  font-size: 14px;
+}
+.group-price input{
+  border:none;
+  box-sizing:border-box;
+  border-radius:5px;
+  text-align:center;
+  width:100%;
+  height:38px;
+  padding: 0 30px;
+  outline: 0;
+  font-size:14px;
+  transition:all .3s ease;
+}
+.group-price input.active{
+  /*border:1px solid #FF0000;*/
+}
+.group-price input::placeholder{
+  color:#C5C5C5;
+}
+.group-price input:focus{
+  /*border:1px solid rgba(0,0,0,0.7);*/
+}
+.group-line{
+  position:relative;
+  margin:0px 5px;
+  width:8px;
+}
+.group-line:before{
+  content:'';
+  position:absolute;
+  background:#000;
+  width:9px;
+  height:1px;
+}
+.addprice{
+  width:34px;
+  height:34px;
+  background: #F4F4F4;
+  border-radius:50px;
+  margin-left:8px;
+  transition: all .3s ease;
+
+  text-decoration: none;
+  outline: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: none;
+  border-style: none;
+}
+.addprice:hover{
+  background:#FF6E00;
+  box-shadow:0px 2px 2px #C84F29;
+}
+.addprice:hover .icons-arrow-b{
+  color:#fff;
+}
+.addprice:active{
+  background:#FF6E00;
+  box-shadow: inset 0px 2px 2px #C84F29;
+}
+.addprice .icons-arrow-b{
+  color:#BFBFBF;
+  font-size:17px;
+}
+.addprice.enabled{
+  background:#FF6E00;
+  box-shadow:0px 2px 2px #C84F29;
+}
+.addprice.enabled .icons-arrow-b{
+  color:#fff;
+}
+
+.group-price.s1 .group-symbol{
+  left:36px;
+}
+.group-price.s1 .input-price{
+  padding: 0 30px 0 37px;
+}
+.group-price.s2 .group-symbol{
+  left:32px;
+}
+.group-price.s2 .input-price{
+  padding: 0 30px 0 39px;
+}
+.group-price.s3 .group-symbol{
+  left:30px;
+}
+.group-price.s3 .input-price{
+  padding: 0 30px 0 42px;
+}
+.group-price.s4 .group-symbol{
+  left:28px;
+}
+.group-price.s4 .input-price{
+  padding: 0 27px 0 42px;
+}
